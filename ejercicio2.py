@@ -6,7 +6,7 @@ historial_prestamos = 0  # Contador total de libros prestados
 # Bucle principal del programa
 while True:
     # Mostrar menú de opciones al usuario
-    print("\n===MENÚ PRINCIPAL===")
+    print("\n____MENÚ PRINCIPAL____")
     print("1. Libros disponibles")
     print("2. Realizar préstamo")
     print("3. Devolver préstamo")
@@ -22,12 +22,12 @@ while True:
         else:
             # OPCIÓN 1: Mostrar libros disponibles en el inventario
             if opcion == 1:
-                print("\n===LIBROS DISPONIBLES===")
+                print("\n____LIBROS DISPONIBLES____")
                 print(f"Libros disponibles: {stock_libros}")
     
             # OPCIÓN 2: Realizar préstamo de libros
             elif opcion == 2:
-                print("\n===REALIZAR PRÉSTAMO===")
+                print("\n____REALIZAR PRÉSTAMO____")
                 try:
                     # Solicitar cantidad de libros a prestar
                     libro_prestado = int(input("Ingrese el número de libros a prestar: "))
@@ -47,7 +47,7 @@ while True:
     
             # OPCIÓN 3: Devolver libros prestados
             elif opcion == 3:
-                print("\n===DEVOLVER PRÉSTAMO===")
+                print("\n____DEVOLVER PRÉSTAMO____")
                 try:
                     # Solicitar cantidad de libros a devolver
                     libro_devuelto = int(input("Ingrese el número de libros a devolver: "))
@@ -66,7 +66,7 @@ while True:
     
             # OPCIÓN 4: Mostrar historial total de préstamos
             elif opcion == 4:
-                print("\n===HISTORIAL DE PRÉSTAMOS===")
+                print("\n____HISTORIAL DE PRÉSTAMOS____")
                 print(f"Total de préstamos realizados: {historial_prestamos}")
     
             # OPCIÓN 5: Salir del programa
